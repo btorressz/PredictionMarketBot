@@ -14,3 +14,7 @@ The Prediction Market Bot is a sophisticated smart contract system designed to p
 - **MarketEventFetcher.sol**: Fetches and filters market events for the bot to act upon.
 - **Governance.sol**: Handles governance and upgradability of the contract system.
 
+  ### Test Contract
+
+- **TestPredictionMarketBot.sol**: A test contract to verify the functionality of the `PredictionMarketBot` and its dependencies.
+
