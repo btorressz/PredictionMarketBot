@@ -1,0 +1,136 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "maxBetAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_maxBetAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "setMaxBetAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_stopLossThreshold",
+						"type": "uint256"
+					}
+				],
+				"name": "setStopLossThreshold",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stopLossThreshold",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Contract to handle risk management for the prediction market bot.",
+			"kind": "dev",
+			"methods": {
+				"setMaxBetAmount(uint256)": {
+					"params": {
+						"_maxBetAmount": "The maximum bet amount."
+					}
+				},
+				"setStopLossThreshold(uint256)": {
+					"params": {
+						"_stopLossThreshold": "The stop-loss threshold."
+					}
+				}
+			},
+			"title": "RiskManager",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"setMaxBetAmount(uint256)": {
+					"notice": "Sets the maximum bet amount."
+				},
+				"setStopLossThreshold(uint256)": {
+					"notice": "Sets the stop-loss threshold."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/RiskManager.sol": "RiskManager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/RiskManager.sol": {
+			"keccak256": "0x46ae95c2de84351d3885ecc79a7ed1cb1223452ab40d9edc3f6666b2594d550a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c98681483c3f8943651defd0c4c11cc00e932eb5d51bdd93acd939c4ef9fd389",
+				"dweb:/ipfs/QmPPTUxgHZtqZva3crSseJukPteuTc3YTFz5dmjJuAPFJU"
+			]
+		}
+	},
+	"version": 1
+}

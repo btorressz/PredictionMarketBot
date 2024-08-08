@@ -1,0 +1,110 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "calculateBetAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "determineOutcome",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Contract to define various betting strategies.",
+			"kind": "dev",
+			"methods": {
+				"calculateBetAmount()": {
+					"returns": {
+						"_0": "uint256 The calculated bet amount."
+					}
+				},
+				"determineOutcome()": {
+					"returns": {
+						"_0": "bool The determined outcome."
+					}
+				}
+			},
+			"title": "BettingStrategy",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"calculateBetAmount()": {
+					"notice": "Calculates the bet amount based on the strategy."
+				},
+				"determineOutcome()": {
+					"notice": "Determines the outcome of the bet based on the strategy."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BettingStrategy.sol": "BettingStrategy"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BettingStrategy.sol": {
+			"keccak256": "0x3eec44126aad8a07c56b18605522c152bd1964f53c1c6b7bfb1a57fde15e76e7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b0b6c3620262d7c36ddee59d6e1d48403a8fb5798106dd0f691d66372d27222b",
+				"dweb:/ipfs/QmQS4eauYEApp6M9wLRDnG2QpyKvLyFkkKUK3c7vah4wLL"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,96 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "eventId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					}
+				],
+				"name": "MarketEventFetched",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "fetchMarketEvents",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Contract to fetch and filter market events.",
+			"kind": "dev",
+			"methods": {},
+			"title": "MarketEventFetcher",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"fetchMarketEvents()": {
+					"notice": "Fetches market events from the prediction market."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MarketEventFetcher.sol": "MarketEventFetcher"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MarketEventFetcher.sol": {
+			"keccak256": "0x4f644050089e3e2418827f9050098038c87b9e4d1408b2747109843055e32527",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0f11111c4d595f1602424a2d9df909f5ec3809bcfa5995b2e6f2e73acd046f16",
+				"dweb:/ipfs/QmNiK5ewFy3QvyJ54cE1mTvuZxJWNQ3Gs4WTBd2ysgYMpz"
+			]
+		}
+	},
+	"version": 1
+}

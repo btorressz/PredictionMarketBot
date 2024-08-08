@@ -1,0 +1,312 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "passed",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "TestResult",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "bettingStrategy",
+				"outputs": [
+					{
+						"internalType": "contract BettingStrategy",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "governance",
+				"outputs": [
+					{
+						"internalType": "contract Governance",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "marketEventFetcher",
+				"outputs": [
+					{
+						"internalType": "contract MarketEventFetcher",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "predictionMarketBot",
+				"outputs": [
+					{
+						"internalType": "contract PredictionMarketBot",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "riskManager",
+				"outputs": [
+					{
+						"internalType": "contract RiskManager",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testAdjustPosition",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testAutomatedBet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testFetchMarketEvents",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testGetActiveBets",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testGetBetResult",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testGetLatestPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testPlaceBet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testTransferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testWithdrawTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "A test contract to test the functionality of the PredictionMarketBot and its dependencies.",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Sets up the test environment by deploying the necessary contracts."
+				}
+			},
+			"title": "TestPredictionMarketBot",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"testAdjustPosition()": {
+					"notice": "Tests the adjustPosition function."
+				},
+				"testAutomatedBet()": {
+					"notice": "Tests the automatedBet function."
+				},
+				"testFetchMarketEvents()": {
+					"notice": "Tests the fetchMarketEvents function."
+				},
+				"testGetActiveBets()": {
+					"notice": "Tests the getActiveBets function."
+				},
+				"testGetBetResult()": {
+					"notice": "Tests the getBetResult function."
+				},
+				"testGetLatestPrice()": {
+					"notice": "Tests the getLatestPrice function."
+				},
+				"testPlaceBet()": {
+					"notice": "Tests the placeBet function."
+				},
+				"testTransferOwnership()": {
+					"notice": "Tests the transferOwnership function."
+				},
+				"testWithdrawTokens()": {
+					"notice": "Tests the withdrawTokens function."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/TestPredictionMarketBot.sol": "TestPredictionMarketBot"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0xfe4e8bb4861bb3860ba890ab91a3b818ec66e5a8f544fb608cfcb73f433472cd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://644cff84052e1e82b5bb502b2a46e8f142a62b0db4cd9b38200798ba8373c6f7",
+				"dweb:/ipfs/QmTa99QHrJBn3SXDizquPBUiTxVCNKQrHgaWJhuds5Sce2"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xc6a8ff0ea489379b61faa647490411b80102578440ab9d84e9a957cc12164e70",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0ea104e577e63faea3b69c415637e99e755dcbf64c5833d7140c35a714d6d90c",
+				"dweb:/ipfs/Qmau6x4Ns9XdyynRCNNp3RhLqijJjFm7z5fyZazfYFGYdq"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
+			"keccak256": "0x6008dabfe393240d73d7dd7688033f72740d570aa422254d29a7dce8568f3aff",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f5196ec75139918c6c7bb4251b36395e668f1fa6d206beba7e7520e74913940d",
+				"dweb:/ipfs/QmSyqjksXxmm2mCG6qRd1yuwLykypkSVBbnBnGqJRcuJMi"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+			"keccak256": "0x37bb49513c49c87c4642a891b13b63571bc87013dde806617aa1efb54605f386",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b3036b3a83b7c48f96641f2a9002b9f2dcb6a5958dd670894ada21ae8229b3d0",
+				"dweb:/ipfs/QmUNfSBdoVtjhETaUJCYcaC7pTMgbhht926tJ2uXJbiVd3"
+			]
+		},
+		"@openzeppelin/contracts/utils/Address.sol": {
+			"keccak256": "0xaf28a975a78550e45f65e559a3ad6a5ad43b9b8a37366999abd1b7084eb70721",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b7bd24e224f67f65bfadf85dc2929fa965456bb2415478bd0125471b5ce35245",
+				"dweb:/ipfs/QmRaydGr8BTHs1kvaZfsNU69pKzUAGFrvABn1KiRSbE51y"
+			]
+		},
+		"contracts/BettingStrategy.sol": {
+			"keccak256": "0x3eec44126aad8a07c56b18605522c152bd1964f53c1c6b7bfb1a57fde15e76e7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b0b6c3620262d7c36ddee59d6e1d48403a8fb5798106dd0f691d66372d27222b",
+				"dweb:/ipfs/QmQS4eauYEApp6M9wLRDnG2QpyKvLyFkkKUK3c7vah4wLL"
+			]
+		},
+		"contracts/Governance.sol": {
+			"keccak256": "0x717a20e689a9cf850a28fe0f2c2d171a6fea21ed9c6c70f785414553b1f5ff01",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aa57850eee0c136b52eb6b4df024d6786e99984fd027acc707b31cf7768cd740",
+				"dweb:/ipfs/QmYoyzrXExeuJ6EwBUxQ3gBBKGr4V7s53LLb2H1UfWJi1A"
+			]
+		},
+		"contracts/MarketEventFetcher.sol": {
+			"keccak256": "0x4f644050089e3e2418827f9050098038c87b9e4d1408b2747109843055e32527",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0f11111c4d595f1602424a2d9df909f5ec3809bcfa5995b2e6f2e73acd046f16",
+				"dweb:/ipfs/QmNiK5ewFy3QvyJ54cE1mTvuZxJWNQ3Gs4WTBd2ysgYMpz"
+			]
+		},
+		"contracts/PredictionMarketBot.sol": {
+			"keccak256": "0x5ab17d423ed8c903db78ae22ba0690e2291d0bccbd77ff337bac0408bec06607",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0d218276bd17be3e54255c1656f1052162425bd4f9d7f13f4d85db5c7682dbc4",
+				"dweb:/ipfs/QmRq8YNhd9CggcUi8bD6PPnqSyWMcbnqtWbgjRJpso2pFT"
+			]
+		},
+		"contracts/RiskManager.sol": {
+			"keccak256": "0x46ae95c2de84351d3885ecc79a7ed1cb1223452ab40d9edc3f6666b2594d550a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c98681483c3f8943651defd0c4c11cc00e932eb5d51bdd93acd939c4ef9fd389",
+				"dweb:/ipfs/QmPPTUxgHZtqZva3crSseJukPteuTc3YTFz5dmjJuAPFJU"
+			]
+		},
+		"tests/TestPredictionMarketBot.sol": {
+			"keccak256": "0xfa52986da49f7085993f4d853621c1596ddba67e7bd8b757e71fdf30e30dd611",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ad7d3ef12b4bf7ed467f927f88c3b46739696d11ef4b8e28fbd788340ced9c8d",
+				"dweb:/ipfs/QmNzZoeFFhEHC64Rn3zmudfV4ptYJU8aaHJ86usVJdz9FV"
+			]
+		}
+	},
+	"version": 1
+}

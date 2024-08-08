@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Contract to handle governance and upgrades.",
+			"kind": "dev",
+			"methods": {
+				"transferOwnership(address)": {
+					"params": {
+						"newOwner": "The address of the new owner."
+					}
+				}
+			},
+			"title": "Governance",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"transferOwnership(address)": {
+					"notice": "Transfers ownership of the contract to a new owner."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Governance.sol": "Governance"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Governance.sol": {
+			"keccak256": "0x717a20e689a9cf850a28fe0f2c2d171a6fea21ed9c6c70f785414553b1f5ff01",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aa57850eee0c136b52eb6b4df024d6786e99984fd027acc707b31cf7768cd740",
+				"dweb:/ipfs/QmYoyzrXExeuJ6EwBUxQ3gBBKGr4V7s53LLb2H1UfWJi1A"
+			]
+		}
+	},
+	"version": 1
+}
