@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Prediction Market Bot is a sophisticated smart contract system designed to participate in prediction markets based on predefined strategies and external data inputs. The system is modular, comprising several contracts to ensure maintainability, scalability, and security.
+The Prediction Market Bot is a sophisticated smart contract system designed to participate in prediction markets based on predefined strategies and external data inputs. The system is modular, comprising several contracts to ensure maintainability, scalability, and security. This project was made in Remix IDE
 
 ## Contracts
 
@@ -17,4 +17,8 @@ The Prediction Market Bot is a sophisticated smart contract system designed to p
   ### Test Contract
 
 - **TestPredictionMarketBot.sol**: A test contract to verify the functionality of the `PredictionMarketBot` and its dependencies.
+
+  ## License
+
+This project is licensed under the MIT License.
 
